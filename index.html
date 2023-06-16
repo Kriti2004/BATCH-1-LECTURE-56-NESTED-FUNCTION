@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BATCH-1 LECTURE-56</title>
+        <style>
+
+        </style>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        
+
+        <script>
+            var a="A"; //Decleration & Initialization
+            var b=' flower'; //Decleration & Initialization
+            var c=' needs'; //Decleration & Initialization
+            var d=' water.'; //Decleration & Initialization
+
+            console.log(a+b+c+d);
+
+            // 1. Function Defination
+            function lineA(x,y,z,p){
+                // Function body
+                console.log(x+ " " +y+ " " +z+ " " +p);
+            }
+
+            // 2. Calling
+            lineA("A",'tree',"needs",'water.');
+
+            var a="A"; //Decleration & Initialization
+            var b=' rabbit'; //Decleration & Initialization
+            var c=' needs'; //Decleration & Initialization
+            var d=' water.'; //Decleration & Initialization
+
+            console.log(a+b+c+d);
+
+            // 1. Function Defination
+            function lineB(x,y,z,p){
+                // Function body
+                console.log(x+ " " +y+ " " +z+ " " +p);
+            }
+
+            // 2. Calling
+            lineB("A",'horse',"needs",'water.');
+
+            var a="You"; //Decleration & Initialization
+            var b=' needs'; //Decleration & Initialization
+            var c=' water.'; //Decleration & Initialization
+
+            console.log(a+b+c);
+
+            // 1. Function Defination
+            function lineC(x,y,z){
+                // Function body
+                console.log(x+ " " +y+ " " +z);
+            }
+
+            // 2. Calling
+            lineC("I","need",'water.')
+
+            let x="We"; //Decleration & Initialization
+            let y=' all'; //Decleration & Initialization
+            let z=' need'; //Decleration & Initialization
+            let q=' water.'; //Decleration & Initialization
+
+            console.log(x+y+z+q);
+        </script>
+        <script>
+            // 1. Function Defination
+            // Proper Naming convention
+            // i.e Functions Name are always in camelCase
+            function myFunA(x,y){ // x and y are formal arguements
+                // Function body
+                return x+y;
+            }
+             var result = myFunA(10,30); // 40
+             console.log(result);
+            // Function as arguement
+             // let r2 = myFunA(10,myFunA(10,30));
+
+             // Deep nested calling
+             let r2 = myFunA(10,myFunA(10,myFunA(20,30)));
+             console.log(r2);
+        </script>
+        <script>
+            function a(){
+                // Function body
+                return 10;
+            }
+            function b(){
+                // Function body
+                return 20;
+            }
+            function c(){
+                // Function body
+                return 40;
+            }
+            function d(x,y,z){
+                // Function body
+                return x+y-z;
+            }
+            // Function as a arguement
+            let p =d(a(),b(),c());
+
+
+            console.log(p);
+        </script>
+    </body>
+</html>
